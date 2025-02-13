@@ -183,8 +183,8 @@
                 </a>
             </li>
             <li>
-                <a href="https://shuvoislamkhan.github.io/about" title="about">
-                    <span>about</span>
+                <a href="https://shuvoislamkhan.github.io/About" title="About">
+                    <span>About</span>
                 </a>
             </li>
         </ul>
@@ -258,7 +258,7 @@ With the rise of language models generalizing to a broad spectrum of tasks and R
   <section class="entry-content">
     <p>Hallucination in large language models usually refers to the model generating unfaithful, fabricated, inconsistent, or nonsensical content. As a term, hallucination has been somewhat generalized to cases when the model makes mistakes. Here, I would like to narrow down the problem of hallucination to cases where the model output is fabricated and not grounded by either the provided context or world knowledge.
 There are two types of hallucination:
-In-context hallucination: The model output should be consistent with the source content in context. Extrinsic hallucination: The model output should be grounded by the pre-training dataset. However, given the size of the pre-training dataset, it is too expensive to retrieve and identify conflicts per generation. If we consider the pre-training data corpus as a proxy for world knowledge, we essentially try to ensure the model output is factual and verifiable by external world knowledge. Equally importantly, when the model does not know about a fact, it should say so. This post focuses on extrinsic hallucination. To avoid hallucination, LLMs need to be (1) factual and (2) acknowledge not knowing the answer when applicable.
+In-context hallucination: The model output should be consistent with the source content in context. Extrinsic hallucination: The model output should be grounded by the pre-training dataset. However, given the size of the pre-training dataset, it is too expensive to retrieve and identify conflicts per generation. If we consider the pre-training data corpus as a proxy for world knowledge, we essentially try to ensure the model output is factual and verifiable by external world knowledge. Equally importantly, when the model does not know About a fact, it should say so. This post focuses on extrinsic hallucination. To avoid hallucination, LLMs need to be (1) factual and (2) acknowledge not knowing the answer when applicable.
 ...</p>
   </section>
   <footer class="entry-footer">Date: July 7, 2024  |  Estimated Reading Time: 30 min  |  Author: Lilian Weng</footer>
@@ -280,7 +280,7 @@ It has extra requirements on temporal consistency across frames in time, which n
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2>Thinking about High-Quality Human Data
+    <h2>Thinking About High-Quality Human Data
     </h2>
   </header>
   <section class="entry-content">
@@ -289,7 +289,7 @@ High-quality data is the fuel for modern data deep learning model training. Most
 ...</p>
   </section>
   <footer class="entry-footer">Date: February 5, 2024  |  Estimated Reading Time: 21 min  |  Author: Lilian Weng</footer>
-  <a class="entry-link" aria-label="post link to Thinking about High-Quality Human Data" href="https://shuvoislamkhan.github.io/posts/2024-02-05-human-data-quality/"></a>
+  <a class="entry-link" aria-label="post link to Thinking About High-Quality Human Data" href="https://shuvoislamkhan.github.io/posts/2024-02-05-human-data-quality/"></a>
 </article>
 
 <article class="post-entry"> 
@@ -328,7 +328,7 @@ Planning Subgoal and decomposition: The agent breaks down large tasks into small
   </header>
   <section class="entry-content">
     <p>Prompt Engineering, also known as In-Context Prompting, refers to methods for how to communicate with LLM to steer its behavior for desired outcomes without updating the model weights. It is an empirical science and the effect of prompt engineering methods can vary a lot among models, thus requiring heavy experimentation and heuristics.
-This post only focuses on prompt engineering for autoregressive language models, so nothing with Cloze tests, image generation or multimodality models. At its core, the goal of prompt engineering is about alignment and model steerability. Check my previous post on controllable text generation.
+This post only focuses on prompt engineering for autoregressive language models, so nothing with Cloze tests, image generation or multimodality models. At its core, the goal of prompt engineering is About alignment and model steerability. Check my previous post on controllable text generation.
 ...</p>
   </section>
   <footer class="entry-footer">Date: March 15, 2023  |  Estimated Reading Time: 21 min  |  Author: Lilian Weng</footer>
@@ -341,7 +341,7 @@ This post only focuses on prompt engineering for autoregressive language models,
     </h2>
   </header>
   <section class="entry-content">
-    <p>Many new Transformer architecture improvements have been proposed since my last post on “The Transformer Family” about three years ago. Here I did a big refactoring and enrichment of that 2020 post — restructure the hierarchy of sections and improve many sections with more recent papers. Version 2.0 is a superset of the old version, about twice the length.
+    <p>Many new Transformer architecture improvements have been proposed since my last post on “The Transformer Family” About three years ago. Here I did a big refactoring and enrichment of that 2020 post — restructure the hierarchy of sections and improve many sections with more recent papers. Version 2.0 is a superset of the old version, About twice the length.
 Notations Symbol Meaning $d$ The model size / hidden state dimension / positional encoding size. $h$ The number of heads in multi-head attention layer. $L$ The segment length of input sequence. $N$ The total number of attention layers in the model; not considering MoE. $\mathbf{X} \in \mathbb{R}^{L \times d}$ The input sequence where each element has been mapped into an embedding vector of shape $d$, same as the model size. $\mathbf{W}^k \in \mathbb{R}^{d \times d_k}$ The key weight matrix. $\mathbf{W}^q \in \mathbb{R}^{d \times d_k}$ The query weight matrix. $\mathbf{W}^v \in \mathbb{R}^{d \times d_v}$ The value weight matrix. Often we have $d_k = d_v = d$. $\mathbf{W}^k_i, \mathbf{W}^q_i \in \mathbb{R}^{d \times d_k/h}; \mathbf{W}^v_i \in \mathbb{R}^{d \times d_v/h}$ The weight matrices per head. $\mathbf{W}^o \in \mathbb{R}^{d_v \times d}$ The output weight matrix. $\mathbf{Q} = \mathbf{X}\mathbf{W}^q \in \mathbb{R}^{L \times d_k}$ The query embedding inputs. $\mathbf{K} = \mathbf{X}\mathbf{W}^k \in \mathbb{R}^{L \times d_k}$ The key embedding inputs. $\mathbf{V} = \mathbf{X}\mathbf{W}^v \in \mathbb{R}^{L \times d_v}$ The value embedding inputs. $\mathbf{q}_i, \mathbf{k}_i \in \mathbb{R}^{d_k}, \mathbf{v}_i \in \mathbb{R}^{d_v}$ Row vectors in query, key, value matrices, $\mathbf{Q}$, $\mathbf{K}$ and $\mathbf{V}$. $S_i$ A collection of key positions for the $i$-th query $\mathbf{q}_i$ to attend to. $\mathbf{A} \in \mathbb{R}^{L \times L}$ The self-attention matrix between a input sequence of lenght $L$ and itself. $\mathbf{A} = \text{softmax}(\mathbf{Q}\mathbf{K}^\top / \sqrt{d_k})$. $a_{ij} \in \mathbf{A}$ The scalar attention score between query $\mathbf{q}_i$ and key $\mathbf{k}_j$. $\mathbf{P} \in \mathbb{R}^{L \times d}$ position encoding matrix, where the $i$-th row $\mathbf{p}_i$ is the positional encoding for input $\mathbf{x}_i$. Transformer Basics The Transformer (which will be referred to as “vanilla Transformer” to distinguish it from other enhanced versions; Vaswani, et al., 2017) model has an encoder-decoder architecture, as commonly used in many NMT models. Later simplified Transformer was shown to achieve great performance in language modeling tasks, like in encoder-only BERT or decoder-only GPT.
 ...</p>
   </section>

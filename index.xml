@@ -27,7 +27,7 @@
 &lt;p&gt;There are two types of hallucination:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;In-context hallucination: The model output should be consistent with the source content in context.&lt;/li&gt;
-&lt;li&gt;Extrinsic hallucination: The model output should be grounded by the pre-training dataset. However, given the size of the pre-training dataset, it is too expensive to retrieve and identify conflicts per generation. If we consider the pre-training data corpus as a proxy for world knowledge, we essentially try to ensure the model output is factual and verifiable by external world knowledge. Equally importantly, when the model does not know about a fact, it should say so.&lt;/li&gt;
+&lt;li&gt;Extrinsic hallucination: The model output should be grounded by the pre-training dataset. However, given the size of the pre-training dataset, it is too expensive to retrieve and identify conflicts per generation. If we consider the pre-training data corpus as a proxy for world knowledge, we essentially try to ensure the model output is factual and verifiable by external world knowledge. Equally importantly, when the model does not know About a fact, it should say so.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;This post focuses on extrinsic hallucination. To avoid hallucination, LLMs need to be (1) factual and (2) acknowledge not knowing the answer when applicable.&lt;/p&gt;</description>
     </item>
@@ -50,7 +50,7 @@
     </item>
     
     <item>
-      <title>Thinking about High-Quality Human Data</title>
+      <title>Thinking About High-Quality Human Data</title>
       <link>https://shuvoislamkhan.github.io/posts/2024-02-05-human-data-quality/</link>
       <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
       
@@ -110,7 +110,7 @@
       
       <guid>https://shuvoislamkhan.github.io/posts/2023-03-15-prompt-engineering/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Prompt Engineering&lt;/strong&gt;, also known as &lt;strong&gt;In-Context Prompting&lt;/strong&gt;, refers to methods for how to communicate with LLM to steer its behavior for desired outcomes &lt;em&gt;without&lt;/em&gt; updating the model weights. It is an empirical science and the effect of prompt engineering methods can vary a lot among models, thus requiring heavy experimentation and heuristics.&lt;/p&gt;
-&lt;p&gt;This post only focuses on prompt engineering for autoregressive language models, so nothing with Cloze tests, image generation or multimodality models. At its core, the goal of prompt engineering is about alignment and model steerability. Check my &lt;a href=&#34;https://shuvoislamkhan.github.io/posts/2021-01-02-controllable-text-generation/&#34;&gt;previous post&lt;/a&gt; on controllable text generation.&lt;/p&gt;</description>
+&lt;p&gt;This post only focuses on prompt engineering for autoregressive language models, so nothing with Cloze tests, image generation or multimodality models. At its core, the goal of prompt engineering is About alignment and model steerability. Check my &lt;a href=&#34;https://shuvoislamkhan.github.io/posts/2021-01-02-controllable-text-generation/&#34;&gt;previous post&lt;/a&gt; on controllable text generation.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -119,7 +119,7 @@
       <pubDate>Fri, 27 Jan 2023 00:00:00 +0000</pubDate>
       
       <guid>https://shuvoislamkhan.github.io/posts/2023-01-27-the-transformer-family-v2/</guid>
-      <description>&lt;p&gt;Many new Transformer architecture improvements have been proposed since my last post on &lt;a href=&#34;https://shuvoislamkhan.github.io/posts/2020-04-07-the-transformer-family/&#34;&gt;&lt;ins&gt;&amp;ldquo;The Transformer Family&amp;rdquo;&lt;/ins&gt;&lt;/a&gt; about three years ago. Here I did a big refactoring and enrichment of that 2020 post &amp;mdash; restructure the hierarchy of sections and improve many sections with more recent papers. Version 2.0 is a superset of the old version, about twice the length.&lt;/p&gt;
+      <description>&lt;p&gt;Many new Transformer architecture improvements have been proposed since my last post on &lt;a href=&#34;https://shuvoislamkhan.github.io/posts/2020-04-07-the-transformer-family/&#34;&gt;&lt;ins&gt;&amp;ldquo;The Transformer Family&amp;rdquo;&lt;/ins&gt;&lt;/a&gt; About three years ago. Here I did a big refactoring and enrichment of that 2020 post &amp;mdash; restructure the hierarchy of sections and improve many sections with more recent papers. Version 2.0 is a superset of the old version, About twice the length.&lt;/p&gt;
 &lt;h1 id=&#34;notations&#34;&gt;Notations&lt;/h1&gt;
 &lt;table&gt;
   &lt;thead&gt;
@@ -489,7 +489,7 @@
       
       <guid>https://shuvoislamkhan.github.io/posts/2018-10-13-flow-models/</guid>
       <description>&lt;!-- In this post, we are looking into the third type of generative models: flow-based generative models. Different from GAN and VAE, they explicitly learn the probability density function of the input data. --&gt;
-&lt;p&gt;So far, I&amp;rsquo;ve written about two types of generative models, &lt;a href=&#34;https://shuvoislamkhan.github.io/posts/2017-08-20-gan/&#34;&gt;GAN&lt;/a&gt; and &lt;a href=&#34;https://shuvoislamkhan.github.io/posts/2018-08-12-vae/&#34;&gt;VAE&lt;/a&gt;. Neither of them explicitly learns the probability density function of real data, $p(\mathbf{x})$ (where $\mathbf{x} \in \mathcal{D}$) &amp;mdash; because it is really hard! Taking the generative model with latent variables as an example, $p(\mathbf{x}) = \int p(\mathbf{x}\vert\mathbf{z})p(\mathbf{z})d\mathbf{z}$ can hardly be calculated as it is intractable to go through all possible values of the latent code $\mathbf{z}$.&lt;/p&gt;</description>
+&lt;p&gt;So far, I&amp;rsquo;ve written About two types of generative models, &lt;a href=&#34;https://shuvoislamkhan.github.io/posts/2017-08-20-gan/&#34;&gt;GAN&lt;/a&gt; and &lt;a href=&#34;https://shuvoislamkhan.github.io/posts/2018-08-12-vae/&#34;&gt;VAE&lt;/a&gt;. Neither of them explicitly learns the probability density function of real data, $p(\mathbf{x})$ (where $\mathbf{x} \in \mathcal{D}$) &amp;mdash; because it is really hard! Taking the generative model with latent variables as an example, $p(\mathbf{x}) = \int p(\mathbf{x}\vert\mathbf{z})p(\mathbf{z})d\mathbf{z}$ can hardly be calculated as it is intractable to go through all possible values of the latent code $\mathbf{z}$.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -544,7 +544,7 @@
 &lt;br/&gt;
 &lt;span class=&#34;update&#34;&gt;[Updated on 2019-02-09: add &lt;a href=&#34;#sac-with-automatically-adjusted-temperature&#34;&gt;SAC with automatically adjusted temperature&lt;/a&gt;].&lt;/span&gt;
 &lt;br/&gt;
-&lt;span class=&#34;update&#34;&gt;[Updated on 2019-06-26: Thanks to Chanseok, we have a version of this post in &lt;a href=&#34;https://talkingaboutme.tistory.com/entry/RL-Policy-Gradient-Algorithms&#34;&gt;Korean&lt;/a&gt;].&lt;/span&gt;
+&lt;span class=&#34;update&#34;&gt;[Updated on 2019-06-26: Thanks to Chanseok, we have a version of this post in &lt;a href=&#34;https://talkingAboutme.tistory.com/entry/RL-Policy-Gradient-Algorithms&#34;&gt;Korean&lt;/a&gt;].&lt;/span&gt;
 &lt;br/&gt;
 &lt;span class=&#34;update&#34;&gt;[Updated on 2019-09-12: add a new policy gradient method &lt;a href=&#34;#svpg&#34;&gt;SVPG&lt;/a&gt;.]&lt;/span&gt;
 &lt;br/&gt;
@@ -589,7 +589,7 @@
 &lt;p&gt;&lt;span class=&#34;update&#34;&gt;[Updated on 2018-12-20: Remove YOLO here. Part 4 will cover multiple fast object detection algorithms, including YOLO.]&lt;/span&gt;
 &lt;br/&gt;
 &lt;span class=&#34;update&#34;&gt;[Updated on 2018-12-27: Add &lt;a href=&#34;#bounding-box-regression&#34;&gt;bbox regression&lt;/a&gt; and &lt;a href=&#34;#common-tricks&#34;&gt;tricks&lt;/a&gt; sections for R-CNN.]&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;In the series of &amp;ldquo;Object Detection for Dummies&amp;rdquo;, we started with basic concepts in image processing, such as gradient vectors and HOG, in &lt;a href=&#34;https://shuvoislamkhan.github.io/posts/2017-10-29-object-recognition-part-1/&#34;&gt;Part 1&lt;/a&gt;. Then we introduced classic convolutional neural network architecture designs for classification and pioneer models for object recognition, Overfeat and DPM, in &lt;a href=&#34;https://shuvoislamkhan.github.io/posts/2017-12-15-object-recognition-part-2/&#34;&gt;Part 2&lt;/a&gt;. In the third post of this series, we are about to review a set of models in the R-CNN (&amp;ldquo;Region-based CNN&amp;rdquo;) family.&lt;/p&gt;</description>
+&lt;p&gt;In the series of &amp;ldquo;Object Detection for Dummies&amp;rdquo;, we started with basic concepts in image processing, such as gradient vectors and HOG, in &lt;a href=&#34;https://shuvoislamkhan.github.io/posts/2017-10-29-object-recognition-part-1/&#34;&gt;Part 1&lt;/a&gt;. Then we introduced classic convolutional neural network architecture designs for classification and pioneer models for object recognition, Overfeat and DPM, in &lt;a href=&#34;https://shuvoislamkhan.github.io/posts/2017-12-15-object-recognition-part-2/&#34;&gt;Part 2&lt;/a&gt;. In the third post of this series, we are About to review a set of models in the R-CNN (&amp;ldquo;Region-based CNN&amp;rdquo;) family.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -682,18 +682,18 @@
       <pubDate>Wed, 21 Jun 2017 00:00:00 +0000</pubDate>
       
       <guid>https://shuvoislamkhan.github.io/posts/2017-06-21-overview/</guid>
-      <description>&lt;!-- Starting earlier this year, I grew a strong curiosity of deep learning and spent some time reading about this field. To document what I’ve learned and to provide some interesting pointers to people with similar interests, I wrote this overview of deep learning models and their applications. --&gt;
-&lt;p&gt;&lt;span style=&#34;color: #aaaaaa;&#34;&gt;(The post was originated from my talk for &lt;a href=&#34;http://wimlds.org/chapters/about-bay-area/&#34;&gt;WiMLDS x Fintech meetup&lt;/a&gt; hosted by &lt;a href=&#34;www.affirm.com&#34;&gt;Affirm&lt;/a&gt;.)&lt;/span&gt;&lt;/p&gt;
+      <description>&lt;!-- Starting earlier this year, I grew a strong curiosity of deep learning and spent some time reading About this field. To document what I’ve learned and to provide some interesting pointers to people with similar interests, I wrote this overview of deep learning models and their applications. --&gt;
+&lt;p&gt;&lt;span style=&#34;color: #aaaaaa;&#34;&gt;(The post was originated from my talk for &lt;a href=&#34;http://wimlds.org/chapters/About-bay-area/&#34;&gt;WiMLDS x Fintech meetup&lt;/a&gt; hosted by &lt;a href=&#34;www.affirm.com&#34;&gt;Affirm&lt;/a&gt;.)&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;I believe many of you have watched or heard of the &lt;a href=&#34;https://youtu.be/vFr3K2DORc8&#34;&gt;games&lt;/a&gt; between AlphaGo and professional Go player &lt;a href=&#34;https://en.wikipedia.org/wiki/Lee_Sedol&#34;&gt;Lee Sedol&lt;/a&gt; in 2016. Lee has the highest rank of nine dan and many world championships. No doubt, he is one of the best Go players in the world, but he &lt;a href=&#34;https://www.scientificamerican.com/article/how-the-computer-beat-the-go-master/&#34;&gt;lost by 1-4&lt;/a&gt; in this series versus AlphaGo. Before this, Go was considered to be an intractable game for computers to master, as its simple rules lay out an exponential number of variations in the board positions, many more than what in Chess. This event surely highlighted 2016 as a big year for AI. Because of AlphaGo, much attention has been attracted to the progress of AI.&lt;/p&gt;</description>
     </item>
     
     
     <item>
-      <title>about</title>
-      <link>https://shuvoislamkhan.github.io/about/</link>
+      <title>About</title>
+      <link>https://shuvoislamkhan.github.io/About/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://shuvoislamkhan.github.io/about/</guid>
+      <guid>https://shuvoislamkhan.github.io/About/</guid>
       <description></description>
     </item>
     
